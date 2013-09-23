@@ -1,0 +1,14 @@
+" The best color scheme ever!!!!!
+" colorscheme zenburn
+
+" Hide the toolbar
+if has("gui_running")
+    set guioptions=eqmrt
+endif
+
+" grow to maximum horizontal width on entering fullscreen mode
+" set fuopt+=maxhorz
+
+" set the font
+" set guifont=Menlo\ Regular:h11.00
+" set guifont=Monaco:h12.00

@@ -1,0 +1,165 @@
+" Get pathogen up and running
+filetype off
+" call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
+call pathogen#helptags()
+
+
+" Force vim to use only unix fileformat and display the ^M char for dos
+" (windows) files
+" set fileformats=unix
+
+" The best color scheme ever!!!!!
+" let g:zenburn_high_Contrast=1
+" colorscheme zenburn
+" colorscheme wombat
+" colorscheme solarized
+" colorscheme hemisu
+colorscheme Tomorrow-Night-Eighties
+
+
+set background=dark
+
+" Turn on omnicompletion for code completion, and set filetype stuff to on
+filetype on
+filetype plugin on
+filetype indent on
+set ofu=syntaxcomplete#Complete
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+set encoding=utf-8
+
+set smartindent
+syntax enable
+set autoindent
+
+" always show file name in bottom
+set modeline
+set ls=2
+
+" The 'scrolloff' sets there are always at least 10 lines visible above and
+" below the cursor
+set so=10
+
+" Tabstops are 4 spaces
+set tabstop=4
+set shiftwidth=4
+
+" Replace tabs with spaces
+set expandtab
+
+set showmatch
+set ruler
+
+" Make command line two lines high
+set ch=2
+
+" Set visual bell -- disable the beeping
+set vb
+
+" Show the current mode
+set showmode
+
+" Always turn spell check on
+set nospell
+
+" Set the changing behavior to use the $ sign
+set cpoptions+=$
+
+" Set the line numbers to be shown
+set number
+
+" Set the search to be case insensitive
+" set ignorecase
+set noignorecase
+
+" Set to word wrap
+set linebreak
+
+" Set the file to be hard wrapped at 80 chars
+" set textwidth=80
+set colorcolumn=80
+highlight ColorColumn guibg=LemonChiffon4
+
+" Working with Chinese input, make normal mode as English
+set noimdisable
+
+"Bind the BufSel() function to a user-command
+command! -nargs=1 Bs :call BufSel("<args>")
+
+"*****************************************************************************
+" Settings for Command-t
+"*****************************************************************************
+nnoremap <silent> <C-o> :CommandT<CR>
+
+"*****************************************************************************
+" Settings for grep
+"*****************************************************************************
+nnoremap <silent> <C-n> :cn<CR>zv
+nnoremap <silent> <C-p> :cp<CR>zv
+
+"*****************************************************************************
+" Settings for bufexplorer
+"*****************************************************************************
+nnoremap <C-b> :BufExplorerVerticalSplit<CR>
+
+"*****************************************************************************
+" Settings for tagbar
+"*****************************************************************************
+noremap <C-k> :TagbarToggle<CR>
+
+"*****************************************************************************
+" Some settings for python
+"*****************************************************************************
+
+" Set the folding option to indent
+nnoremap <space> za
+nnoremap <S-space> zA
+set foldmethod=indent
+set foldlevel=3
+
+" Set to use tab for auto complete
+" inoremap <Tab> <C-n>
+" inoremap <Tab> <C-x><C-n>
+inoremap <Tab> <C-n>
+
+"*****************************************************************************
+" NERDTree Plugin Settings
+"*****************************************************************************
+
+" Toggle the NERD Tree on and off with ctr-l
+nmap <C-l> :NERDTreeToggle<CR>
+
+" Show the bookmarks table on startup
+let NERDTreeShowBookmarks=1
+
+" Ignore .pyc files
+let NERDTreeIgnore = ['\.pyc$']
+
+"*****************************************************************************
+" The following is for vim-latex plugin
+"*****************************************************************************
+
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin on
+
+" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
+" can be called correctly.
+set shellslash
+
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" OPTIONAL: This enables automatic indentation as you type.
+filetype indent on
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
