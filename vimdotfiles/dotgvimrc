@@ -3,7 +3,8 @@
 
 " Hide the toolbar
 if has("gui_running")
-    set guioptions=eqmrt
+    set guioptions=eqmrti
+"    set guioptions=i
 endif
 
 " grow to maximum horizontal width on entering fullscreen mode
