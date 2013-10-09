@@ -13,3 +13,6 @@
 [submodule "bundle/emmet"]
 	path = bundle/emmet
 	url = http://github.com/mattn/emmet-vim.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = git://git.code.sf.net/p/vim-latex/vim-latex
