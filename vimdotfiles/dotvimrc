@@ -84,7 +84,7 @@ set linebreak
 
 " Set the file to be hard wrapped at 80 chars
 set textwidth=80
-set colorcolumn=80
+set colorcolumn=81
 " highlight ColorColumn guibg=LemonChiffon4
 
 " Working with Chinese input, make normal mode as English
