@@ -217,4 +217,6 @@ let g:Tex_MultipleCompileFormats = 'dvi, pdf'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
 " for \lv to work if using pdflatex in mac
-" let g:Tex_ViewRule_pdf = 'open -a Preview.app'
+if has('mac') || has('macunix') || has('gui_mac')
+    let g:Tex_ViewRule_pdf = 'open -a Preview.app'
+endif
