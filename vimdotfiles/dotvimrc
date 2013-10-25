@@ -211,4 +211,10 @@ filetype indent on
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 
-let g:Tex_DefaultTargetFormat='pdf'
+" for compile multiple times when needed for pdflatex
+let g:Tex_MultipleCompileFormats = 'dvi, pdf'
+" for make the default target to pdf when using terminal
+let g:Tex_DefaultTargetFormat = 'pdf'
+
+" for \lv to work if using pdflatex in mac
+" let g:Tex_ViewRule_pdf = 'open -a Preview.app'
