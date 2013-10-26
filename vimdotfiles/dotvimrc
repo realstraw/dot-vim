@@ -19,7 +19,6 @@ call pathogen#helptags()
 " colorscheme hemisu
 colorscheme Tomorrow-Night-Eighties
 
-
 set background=dark
 
 " Turn on omnicompletion for code completion, and set filetype stuff to on
@@ -217,6 +216,6 @@ let g:Tex_MultipleCompileFormats = 'dvi, pdf'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
 " for \lv to work if using pdflatex in mac
-if has('mac') || has('macunix') || has('gui_mac')
+if has('mac') || has('macunix') || has('gui_mac') || has('gui_macvim')
     let g:Tex_ViewRule_pdf = 'open -a Preview.app'
 endif
