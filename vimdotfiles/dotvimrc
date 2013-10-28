@@ -19,6 +19,7 @@ call pathogen#helptags()
 " colorscheme hemisu
 colorscheme Tomorrow-Night-Eighties
 
+
 set background=dark
 
 " Turn on omnicompletion for code completion, and set filetype stuff to on
@@ -147,44 +148,10 @@ let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.pyc$']
 
 "*****************************************************************************
-" Close all buffers but currently opened ones
-" URL: http://stackoverflow.com/questions/1534835/how-do-i-close-all-buffers-that-arent-shown-in-a-window-in-vim
+" Syntastic Plugin Settings
 "*****************************************************************************
 
-function! Wipeout()
-  " list of *all* buffer numbers
-  let l:buffers = range(1, bufnr('$'))
-
-  " what tab page are we in?
-  let l:currentTab = tabpagenr()
-  try
-    " go through all tab pages
-    let l:tab = 0
-    while l:tab < tabpagenr('$')
-      let l:tab += 1
-
-      " go through all windows
-      let l:win = 0
-      while l:win < winnr('$')
-        let l:win += 1
-        " whatever buffer is in this window in this tab, remove it from
-        " l:buffers list
-        let l:thisbuf = winbufnr(l:win)
-        call remove(l:buffers, index(l:buffers, l:thisbuf))
-      endwhile
-    endwhile
-
-    " if there are any buffers left, delete them
-    if len(l:buffers)
-      execute 'bwipeout' join(l:buffers)
-    endif
-  finally
-    " go back to our original tab page
-    execute 'tabnext' l:currentTab
-  endtry
-endfunction
-
-nnoremap <C-b> :call Wipeout()<CR>
+nnoremap <C-e> :SyntasticToggleMode<CR>
 
 "*****************************************************************************
 " The following is for vim-latex plugin
