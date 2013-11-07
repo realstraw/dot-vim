@@ -154,6 +154,31 @@ let NERDTreeIgnore = ['\.pyc$']
 nnoremap <C-e> :SyntasticToggleMode<CR>
 
 "*****************************************************************************
+" FSwitch Plugin Settings
+"*****************************************************************************
+
+au BufEnter *.cpp let b:fswitchdst = 'hpp,h' | let b:fswitchlocs = '.'
+au BufEnter *.hpp let b:fswitchdst = 'cpp' | let b:fswitchlocs = '.'
+" Switch to the file and load it into the current window >
+nnoremap <silent> <Leader>of :FSHere<cr>
+" Switch to the file and load it into the window on the right >
+nnoremap <silent> <Leader>ol :FSRight<cr>
+" Switch to the file and load it into a new window split on the right >
+nnoremap <silent> <Leader>oL :FSSplitRight<cr>
+" Switch to the file and load it into the window on the left >
+nnoremap <silent> <Leader>oh :FSLeft<cr>
+" Switch to the file and load it into a new window split on the left >
+nnoremap <silent> <Leader>oH :FSSplitLeft<cr>
+" Switch to the file and load it into the window above >
+nnoremap <silent> <Leader>ok :FSAbove<cr>
+" Switch to the file and load it into a new window split above >
+nnoremap <silent> <Leader>oK :FSSplitAbove<cr>
+" Switch to the file and load it into the window below >
+nnoremap <silent> <Leader>oj :FSBelow<cr>
+" Switch to the file and load it into a new window split below >
+nnoremap <silent> <Leader>oJ :FSSplitBelow<cr>
+
+"*****************************************************************************
 " The following is for vim-latex plugin
 "*****************************************************************************
 
