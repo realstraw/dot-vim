@@ -22,3 +22,6 @@
 [submodule "bundle/vim-cpp-enhanced-highlight"]
 	path = bundle/vim-cpp-enhanced-highlight
 	url = git@github.com:octol/vim-cpp-enhanced-highlight.git
+[submodule "bundle/csapprox"]
+	path = bundle/csapprox
+	url = git@github.com:godlygeek/csapprox.git
