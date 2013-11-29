@@ -18,3 +18,5 @@ endif
 if has('gui_mac') || has('gui_macvim')
     set guifont=Monaco:h12.00
 endif
+
+colorscheme Tomorrow-Night-Eighties

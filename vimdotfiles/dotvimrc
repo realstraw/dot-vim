@@ -17,7 +17,8 @@ call pathogen#helptags()
 " colorscheme wombat
 " colorscheme solarized
 " colorscheme hemisu
-colorscheme Tomorrow-Night-Eighties
+" colorscheme Tomorrow-Night-Eighties
+colorscheme Tomorrow-Night
 
 
 set background=dark
