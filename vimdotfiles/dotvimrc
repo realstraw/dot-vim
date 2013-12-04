@@ -100,6 +100,16 @@ set listchars=tab:»»,nbsp:~,trail:·
 set list
 
 "*****************************************************************************
+" Some remappings
+"*****************************************************************************
+
+" Use virtual edit to make it natual to move up and down for long lines
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+
+"*****************************************************************************
 " Settings for Command-t
 "*****************************************************************************
 nnoremap <silent> <C-o> :CommandT<CR>
