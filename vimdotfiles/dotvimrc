@@ -129,6 +129,7 @@ nnoremap <silent> <C-p> :cp<CR>zv
 " Settings for tagbar
 "*****************************************************************************
 noremap <C-k> :TagbarToggle<CR>
+let g:tagbar_autofocus=1
 
 "*****************************************************************************
 " Some settings for python
