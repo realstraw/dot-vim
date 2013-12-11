@@ -173,23 +173,23 @@ nnoremap <C-e> :SyntasticToggleMode<CR>
 au BufEnter *.cpp let b:fswitchdst = 'hpp,h' | let b:fswitchlocs = '.'
 au BufEnter *.hpp let b:fswitchdst = 'cpp' | let b:fswitchlocs = '.'
 " Switch to the file and load it into the current window >
-nnoremap <silent> <Leader>ff :FSHere<cr>
+nnoremap <silent> <Leader>ff :FSHere<cr>`"
 " Switch to the file and load it into the window on the right >
-nnoremap <silent> <Leader>fl :FSRight<cr>
+nnoremap <silent> <Leader>fl :FSRight<cr>`"
 " Switch to the file and load it into a new window split on the right >
-nnoremap <silent> <Leader>fL :FSSplitRight<cr>
+nnoremap <silent> <Leader>fL :FSSplitRight<cr>`"
 " Switch to the file and load it into the window on the left >
-nnoremap <silent> <Leader>fh :FSLeft<cr>
+nnoremap <silent> <Leader>fh :FSLeft<cr>`"
 " Switch to the file and load it into a new window split on the left >
-nnoremap <silent> <Leader>fH :FSSplitLeft<cr>
+nnoremap <silent> <Leader>fH :FSSplitLeft<cr>`"
 " Switch to the file and load it into the window above >
-nnoremap <silent> <Leader>fk :FSAbove<cr>
+nnoremap <silent> <Leader>fk :FSAbove<cr>`"
 " Switch to the file and load it into a new window split above >
-nnoremap <silent> <Leader>fK :FSSplitAbove<cr>
+nnoremap <silent> <Leader>fK :FSSplitAbove<cr>`"
 " Switch to the file and load it into the window below >
-nnoremap <silent> <Leader>fj :FSBelow<cr>
+nnoremap <silent> <Leader>fj :FSBelow<cr>`"
 " Switch to the file and load it into a new window split below >
-nnoremap <silent> <Leader>fJ :FSSplitBelow<cr>
+nnoremap <silent> <Leader>fJ :FSSplitBelow<cr>`"
 
 "*****************************************************************************
 " The following is for vim-latex plugin
