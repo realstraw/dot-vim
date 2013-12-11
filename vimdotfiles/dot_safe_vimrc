@@ -1,0 +1,104 @@
+" The vimrc that contains configs without pluggins
+
+scriptencoding utf-8
+
+" Force vim to use only unix fileformat and display the ^M char for dos
+" (windows) files
+" set fileformats=unix
+
+" The best color scheme ever!!!!!
+" let g:zenburn_high_Contrast=1
+" colorscheme zenburn
+" colorscheme wombat
+" colorscheme solarized
+" colorscheme hemisu
+" colorscheme Tomorrow-Night-Eighties
+colorscheme Tomorrow-Night
+
+
+set background=dark
+
+" Turn on omnicompletion for code completion, and set filetype stuff to on
+filetype on
+filetype plugin on
+filetype indent on
+set ofu=syntaxcomplete#Complete
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+set encoding=utf-8
+
+set smartindent
+syntax enable
+set autoindent
+
+" always show file name in bottom
+set modeline
+set ls=2
+
+" The 'scrolloff' sets there are always at least 10 lines visible above and
+" below the cursor
+set so=10
+
+" Tabstops are 4 spaces
+set tabstop=4
+set shiftwidth=4
+
+" Replace tabs with spaces
+set expandtab
+
+set showmatch
+set ruler
+
+" Make command line two lines high
+set ch=2
+
+" Set visual bell -- disable the beeping
+set vb
+
+" Show the current mode
+set showmode
+
+" Always turn spell check on
+set nospell
+
+" Set the changing behavior to use the $ sign
+set cpoptions+=$
+
+" Set the line numbers to be shown
+set number
+
+" Set the search to be case insensitive
+" set ignorecase
+set noignorecase
+
+" Set to word wrap
+set linebreak
+
+" Set the file to be hard wrapped at 80 chars
+set textwidth=79
+set colorcolumn=80
+" highlight ColorColumn guibg=LemonChiffon4
+
+" Working with Chinese input, make normal mode as English
+set noimdisable
+
+" Make shady characters obvious
+" set listchars=tab:>~,nbsp:_,trail:.
+set listchars=tab:»»,nbsp:~,trail:·
+set list
+
+"*****************************************************************************
+" Some remappings
+"*****************************************************************************
+
+" Use virtual edit to make it natual to move up and down for long lines
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+
+
