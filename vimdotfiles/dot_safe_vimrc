@@ -31,6 +31,9 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 set encoding=utf-8
 
+" remap leader key
+let mapleader = ","
+
 set smartindent
 syntax enable
 set autoindent

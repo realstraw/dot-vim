@@ -55,7 +55,9 @@ inoremap <Tab> <C-x><C-p>
 "*****************************************************************************
 
 " Toggle the NERD Tree on and off with ctr-l
-nmap <C-l> :NERDTreeToggle<CR>
+nnoremap <C-l> :NERDTreeToggle<CR>
+nnoremap <Leader>ll :NERDTreeToggle<CR>
+nnoremap <Leader>lh :NERDTreeFind<Cr>
 
 " Show the bookmarks table on startup
 let NERDTreeShowBookmarks=1
