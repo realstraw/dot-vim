@@ -23,32 +23,12 @@ nnoremap <silent> <C-o> :CommandT<CR>
 nnoremap <silent> <C-n> :cn<CR>zv
 nnoremap <silent> <C-p> :cp<CR>zv
 
-" "*****************************************************************************
-" " Settings for bufexplorer
-" "*****************************************************************************
-" nnoremap <C-b> :BufExplorerVerticalSplit<CR>
-
 "*****************************************************************************
 " Settings for tagbar
 "*****************************************************************************
 noremap <C-k> :TagbarToggle<CR>
 let g:tagbar_autofocus=1
 let g:tagbar_autoclose=1
-
-"*****************************************************************************
-" Some settings for python
-"*****************************************************************************
-
-" Set the folding option to indent
-nnoremap <space> za
-nnoremap <S-space> zA
-set foldmethod=indent
-set foldlevel=3
-
-" Set to use tab for auto complete
-" inoremap <Tab> <C-n>
-inoremap <Tab> <C-x><C-p>
-" inoremap <Tab> <C-n>
 
 "*****************************************************************************
 " NERDTree Plugin Settings
@@ -95,6 +75,12 @@ nnoremap <silent> <Leader>fK :FSSplitAbove<cr>`"
 nnoremap <silent> <Leader>fj :FSBelow<cr>`"
 " Switch to the file and load it into a new window split below >
 nnoremap <silent> <Leader>fJ :FSSplitBelow<cr>`"
+
+"*****************************************************************************
+" YouCompleteMe Plugin Settings
+"*****************************************************************************
+
+set completeopt-=preview
 
 "*****************************************************************************
 " The following is for vim-latex plugin
