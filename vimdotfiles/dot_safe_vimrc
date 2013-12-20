@@ -34,7 +34,8 @@ set encoding=utf-8
 " remap leader key
 let mapleader = ","
 
-set smartindent
+" Using file type based indentation, disable smartindent
+set nosmartindent
 syntax enable
 set autoindent
 

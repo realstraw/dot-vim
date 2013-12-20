@@ -80,7 +80,14 @@ nnoremap <silent> <Leader>fJ :FSSplitBelow<cr>`"
 " YouCompleteMe Plugin Settings
 "*****************************************************************************
 
+" Auto close the preview window after leaving insertion model
+let g:ycm_autoclose_preview_window_after_insertion=1
+" By default, do not show the preview window for hint
 set completeopt-=preview
+
+" key map to activate/deactivate the preview hint
+nnoremap <Leader>ha :set completeopt+=preview<cr>
+nnoremap <Leader>hd :set completeopt-=preview<cr>
 
 "*****************************************************************************
 " The following is for vim-latex plugin
