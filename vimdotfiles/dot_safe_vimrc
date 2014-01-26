@@ -37,6 +37,7 @@ let mapleader = ","
 " Using file type based indentation, disable smartindent
 set nosmartindent
 syntax enable
+" Automatically indent inserted lines
 set autoindent
 
 " always show file name in bottom

@@ -28,3 +28,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
