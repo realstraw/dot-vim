@@ -2,10 +2,6 @@
 
 ## To install:
 
-Clone the repo
-
-    git clone git@github.com:realstraw/dotvim.git ~/.vim
-
 Link the rc files
 
     cd dotvim
