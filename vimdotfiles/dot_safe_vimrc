@@ -118,3 +118,6 @@ set foldlevel=3
 
 " Set to use tab for auto complete
 " inoremap <Tab> <C-x><C-p>
+
+" Remap ctrl-a so that it will int interfere with tmux
+nnoremap <C-a> 0
