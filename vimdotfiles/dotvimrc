@@ -16,6 +16,8 @@ command! -nargs=1 Bs :call BufSel("<args>")
 " Settings for Command-t
 "*****************************************************************************
 nnoremap <silent> <C-o> :CommandT<CR>
+" Set this to ignore target directory
+set wildignore+=*.o,*.obj,.git,target
 
 "*****************************************************************************
 " Settings for grep
