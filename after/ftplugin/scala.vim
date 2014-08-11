@@ -1,5 +1,5 @@
 setlocal shiftwidth=2
 setlocal tabstop=2
 
-set textwidth=119
-set colorcolumn=120
+set textwidth=99
+set colorcolumn=100
