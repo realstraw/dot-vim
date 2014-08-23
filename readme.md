@@ -2,9 +2,13 @@
 
 ## To install:
 
+First clone the repo:
+
+    git clone git@github.com:realstraw/dotvim.git ~/.vim
+
 Link the rc files
 
-    cd dotvim
+    cd ~/.vim
     ./link_configs.sh
 
 Install submodules
