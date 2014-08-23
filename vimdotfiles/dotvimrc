@@ -92,6 +92,9 @@ set completeopt-=preview
 nnoremap <Leader>ha :set completeopt+=preview<cr>
 nnoremap <Leader>hd :set completeopt-=preview<cr>
 
+" key map to restart the server
+nnoremap <Leader>hr :YcmRestartServer<CR>
+
 "*****************************************************************************
 " The following is for vim-latex plugin
 "*****************************************************************************
