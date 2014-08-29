@@ -45,6 +45,9 @@ nnoremap <Leader>lh :NERDTreeFind<Cr>
 " Show the bookmarks table on startup
 let NERDTreeShowBookmarks=1
 
+" Make changing the current root node also modifies pwd as well
+let g:NERDTreeChDirMode=2
+
 " Ignore .pyc files
 let NERDTreeIgnore = ['\.pyc$']
 
