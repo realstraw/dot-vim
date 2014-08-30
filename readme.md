@@ -28,3 +28,9 @@ Compile YouCompleteMe:
 
 Follow the detailed instructions to complie YouCompleteMe and CommandT,
 checkout their docs.
+
+## Other pacakges (Optional)
+
+Python linter:
+
+    pip install flake8
