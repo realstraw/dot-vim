@@ -34,3 +34,9 @@ checkout their docs.
 Python linter:
 
     pip install flake8
+
+## Credit:
+
+The "Tomorrow" colorschemes in `colors/` are copied from
+
+    git@github.com:chriskempson/tomorrow-theme.git
