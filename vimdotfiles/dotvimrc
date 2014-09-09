@@ -19,7 +19,7 @@ command! -nargs=1 Bs :call BufSel("<args>")
 nnoremap <Leader>oo :CommandT<CR>
 nnoremap <Leader>rr :CommandTFlush<CR>
 " Set this to ignore target directory
-set wildignore+=*.o,*.obj,.git,target,*.class,*.cache,*.pyc
+set wildignore+=*.o,*.obj,.git,target,build,*.class,*.cache,*.pyc
 
 "*****************************************************************************
 " Settings for grep
