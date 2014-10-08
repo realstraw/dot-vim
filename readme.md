@@ -15,6 +15,10 @@ Install submodules
 
     git submodule update --init --recursive
 
+Get other files (e.g. the color themes)
+
+    ./update_plugins.sh
+
 Compile CommandT:
 
     cd ~/.vim/bundle/command-t/ruby/command-t
