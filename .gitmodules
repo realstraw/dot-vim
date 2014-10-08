@@ -34,3 +34,6 @@
 [submodule "bundle/vim-mql4"]
 	path = bundle/vim-mql4
 	url = git@github.com:vobornik/vim-mql4.git
+[submodule "bundle/xptemplate"]
+	path = bundle/xptemplate
+	url = git@github.com:drmingdrmer/xptemplate.git
