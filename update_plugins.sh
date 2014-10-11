@@ -25,3 +25,5 @@ curl -s https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim
 echo "| Tomorrow-Night-Blue..."
 curl -s https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night-Blue.vim > \
     $COLORS/Tomorrow-Night-Blue.vim
+
+echo "Done!"
