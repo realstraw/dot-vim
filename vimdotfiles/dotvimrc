@@ -64,6 +64,11 @@ let NERDTreeIgnore = ['\.pyc$']
 
 nnoremap <C-e> :SyntasticToggleMode<CR>
 
+" Default mode for different file types
+let g:syntastic_mode_map = { "mode": "active",
+                           \ "active_filetypes": [],
+                           \ "passive_filetypes": ["java", "scala"] }
+
 "*****************************************************************************
 " FSwitch Plugin Settings
 "*****************************************************************************
