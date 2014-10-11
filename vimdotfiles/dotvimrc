@@ -138,3 +138,9 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 if has('mac') || has('macunix') || has('gui_mac') || has('gui_macvim')
     let g:Tex_ViewRule_pdf = 'open -a Preview.app'
 endif
+
+"*****************************************************************************
+" The following is for vim-markdown plugin
+"*****************************************************************************
+" Turn on latex math plugin
+let g:vim_markdown_math=1

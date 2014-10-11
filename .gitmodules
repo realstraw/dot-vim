@@ -37,3 +37,6 @@
 [submodule "bundle/xptemplate"]
 	path = bundle/xptemplate
 	url = git@github.com:drmingdrmer/xptemplate.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
