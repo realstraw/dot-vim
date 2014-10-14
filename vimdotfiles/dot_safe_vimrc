@@ -106,6 +106,19 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 
+" Quickly insert underline charactors
+" E.g. starting with a title like:
+"
+" This is something important
+"
+" The mapping inserts a row of a given charactor (e.g. '-') like this:
+"
+" This is something important
+" ---------------------------
+"
+" By the mapping
+nnoremap <Leader>ud yyp<c-v>$r
+
 "*****************************************************************************
 " Some settings for python
 "*****************************************************************************
