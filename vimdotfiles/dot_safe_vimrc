@@ -118,6 +118,7 @@ nnoremap gk k
 "
 " By the mapping
 nnoremap <Leader>ud yyp<c-v>$r
+nnoremap <Leader>Ud yyP<c-v>$r
 
 "*****************************************************************************
 " Some settings for python
