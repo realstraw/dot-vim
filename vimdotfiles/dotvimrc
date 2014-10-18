@@ -62,7 +62,7 @@ let NERDTreeIgnore = ['\.pyc$']
 " Syntastic Plugin Settings
 "*****************************************************************************
 
-nnoremap <C-e> :SyntasticToggleMode<CR>
+nnoremap <Leader>ee :SyntasticToggleMode<CR>
 
 " Default mode for different file types
 let g:syntastic_mode_map = { "mode": "active",
