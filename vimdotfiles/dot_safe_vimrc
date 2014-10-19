@@ -120,6 +120,14 @@ nnoremap gk k
 nnoremap <Leader>ud yyp<c-v>$r
 nnoremap <Leader>Ud yyP<c-v>$r
 
+" Remap for easy resize of windows
+if bufwinnr(1)
+  nnoremap + <C-W>+
+  nnoremap - <C-W>-
+  nnoremap > <C-W>>
+  nnoremap < <C-W><
+endif
+
 "*****************************************************************************
 " Some settings for python
 "*****************************************************************************
