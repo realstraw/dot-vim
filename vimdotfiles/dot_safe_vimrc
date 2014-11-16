@@ -129,6 +129,10 @@ nnoremap <Leader>Ud yyP<c-v>$r
 "   nnoremap < <C-W><
 " endif
 
+" Remap buffer next and previous
+nnoremap <Leader>jj :bn<cr>
+nnoremap <Leader>kk :bp<cr>
+
 "*****************************************************************************
 " Some settings for python
 "*****************************************************************************
