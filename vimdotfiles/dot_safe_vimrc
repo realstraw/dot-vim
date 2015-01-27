@@ -38,6 +38,10 @@ nnoremap <Leader>, ,
 " Using file type based indentation, disable smartindent
 set nosmartindent
 syntax enable
+
+" Set the syntax sync to use 200 lines
+autocmd BufEnter * :syntax sync minlines=200
+
 " Automatically indent inserted lines
 set autoindent
 
