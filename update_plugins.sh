@@ -26,4 +26,8 @@ echo "| Tomorrow-Night-Blue..."
 curl -s https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night-Blue.vim > \
     $COLORS/Tomorrow-Night-Blue.vim
 
+echo "| zenburn..."
+curl -s https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim > \
+    $COLORS/zenburn.vim
+
 echo "Done!"
