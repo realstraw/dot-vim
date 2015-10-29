@@ -15,7 +15,6 @@ scriptencoding utf-8
 " colorscheme Tomorrow-Night-Eighties
 colorscheme Tomorrow-Night
 
-
 set background=dark
 
 " Turn on omnicompletion for code completion, and set filetype stuff to on
@@ -30,6 +29,9 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 set encoding=utf-8
+
+" Highlight all search matches
+set hlsearch
 
 " remap leader key
 let mapleader = ","
