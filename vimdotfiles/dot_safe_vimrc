@@ -2,6 +2,10 @@
 
 scriptencoding utf-8
 
+" Using file type based indentation, disable smartindent
+set nosmartindent
+syntax enable
+
 " Force vim to use only unix fileformat and display the ^M char for dos
 " (windows) files
 " set fileformats=unix
@@ -14,8 +18,10 @@ scriptencoding utf-8
 " colorscheme hemisu
 " colorscheme Tomorrow-Night-Eighties
 colorscheme Tomorrow-Night
-
 set background=dark
+
+" make vim background clear
+hi Normal ctermbg=none
 
 " Turn on omnicompletion for code completion, and set filetype stuff to on
 filetype on
@@ -36,10 +42,6 @@ set hlsearch
 " remap leader key
 let mapleader = ","
 nnoremap <Leader>, ,
-
-" Using file type based indentation, disable smartindent
-set nosmartindent
-syntax enable
 
 " Set the syntax sync to use 200 lines
 autocmd BufEnter * :syntax sync minlines=200
@@ -95,8 +97,8 @@ set textwidth=79
 set colorcolumn=80
 " highlight ColorColumn guibg=LemonChiffon4
 
-" Working with Chinese input, make normal mode as English
-set noimdisable
+" " Working with Chinese input, make normal mode as English
+" set noimdisable
 
 " Make shady characters obvious
 " set listchars=tab:>~,nbsp:_,trail:.
