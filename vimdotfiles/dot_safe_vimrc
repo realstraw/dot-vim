@@ -109,6 +109,9 @@ set list
 " Some remappings
 "*****************************************************************************
 
+" Shortcut for no highlight
+nnoremap <C-h> :nohls<cr>
+
 " Use virtual edit to make it natual to move up and down for long lines
 nnoremap j gj
 nnoremap k gk
