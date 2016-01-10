@@ -2,6 +2,10 @@ scriptencoding utf-8
 
 source ~/.safe_vimrc
 
+" Increase minlines for syntax hilighting larger to avoid partially highlighted
+" file
+let c_minlines=500
+
 " Get pathogen up and running
 filetype off
 " call pathogen#runtime_append_all_bundles()
