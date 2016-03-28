@@ -25,6 +25,7 @@ set tags=.tags
 " Settings for Command-t
 "*****************************************************************************
 " nnoremap <silent> <C-o> :CommandT<CR>
+let g:CommandTTraverseSCM = 'pwd'
 nnoremap <Leader>oo :CommandT<CR>
 nnoremap <Leader>rr :CommandTFlush<CR>
 " Set this to ignore target directory
