@@ -15,7 +15,7 @@
 	url = http://github.com/mattn/emmet-vim.git
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
-	url = git://git.code.sf.net/p/vim-latex/vim-latex
+	url = git@github.com:vim-latex/vim-latex.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
