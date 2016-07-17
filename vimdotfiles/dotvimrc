@@ -181,4 +181,3 @@ nnoremap <silent> <Leader>mm :w<CR>:make<CR>
 " Make it use maven to compile for Java
 compiler ant
 set makeprg=mvn\ -q\ compile
-
