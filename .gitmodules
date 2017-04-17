@@ -49,3 +49,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-buffergator"]
+	path = bundle/vim-buffergator
+	url = git@github.com:jeetsukumaran/vim-buffergator.git
