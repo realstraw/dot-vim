@@ -118,6 +118,9 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 
+" Shortcut for removing trailing white spaces
+nnoremap <Leader>clr :%s/\s\+$//e<cr>
+
 " Quickly insert underline charactors
 " E.g. starting with a title like:
 "
