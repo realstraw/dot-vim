@@ -39,6 +39,23 @@ Python linter:
 
     pip install flake8
 
+## New plugins
+
+I'm using git submodule with Pathogen to manage plugins. To add a new plugin
+
+    // assume the plugin is called awesome-plugin
+    git submodule add git@github.com:some/awesome-plugin.git bundle/awesome-plugin
+
+To remove a plugin
+
+    rm -rf bundle/submodule
+    git submodule deinit -f -- bundle/submodule
+    rm -rf .git/modules/bundle/submodule
+
+    # Note: bundle/submodule (no trailing slash)
+    git rm -f bundle/submodule
+
+
 ## Credit:
 
 The "Tomorrow" colorschemes in `colors/` are copied from
