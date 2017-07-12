@@ -150,6 +150,9 @@ nnoremap <Leader>kk :bp<cr>
 " Shortcut for close
 nnoremap <Leader>qq :q<cr>
 
+" Shortcut for fix syntax highlight
+nnoremap <Leader>sss :syntax sync fromstart<cr>
+
 "*****************************************************************************
 " Some settings for python
 "*****************************************************************************
