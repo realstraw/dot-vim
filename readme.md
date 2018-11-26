@@ -28,7 +28,7 @@ Compile CommandT:
 Compile YouCompleteMe:
 
     cd ~/.vim/bundle/YouCompleteMe
-    ./install.sh --clang-completer
+    ./install.py
 
 Follow the detailed instructions to complie YouCompleteMe and CommandT,
 checkout their docs.
