@@ -181,3 +181,9 @@ nnoremap <silent> <Leader>mm :w<CR>:make<CR>
 " Make it use maven to compile for Java
 compiler ant
 set makeprg=mvn\ -q\ compile
+
+"*****************************************************************************
+" The following is for scalariform
+"*****************************************************************************
+au BufEnter *.scala setl formatprg=scalariform\ -f\ -q\ +compactControlReadability\ +alignParameters\ +alignSingleLineCaseStatements\ +doubleIndentConstructorArguments\ +rewriteArrowSymbols\ +preserveSpaceBeforeArguments\ --stdin\ --stdout
+au BufEnter *.scala setl equalprg=scalariform\ -f\ -q\ +compactControlReadability\ +alignParameters\ +alignSingleLineCaseStatements\ +doubleIndentConstructorArguments\ +rewriteArrowSymbols\ +preserveSpaceBeforeArguments\ --stdin\ --stdout
