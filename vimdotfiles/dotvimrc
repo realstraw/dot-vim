@@ -21,15 +21,25 @@ command! -nargs=1 Bs :call BufSel("<args>")
 "*****************************************************************************
 set tags=.tags
 
+"" " Temporarily disable mappings for CommandT to evaluate CtrlP
+"" "*****************************************************************************
+"" " Settings for Command-t
+"" "*****************************************************************************
+"" " nnoremap <silent> <C-o> :CommandT<CR>
+"" let g:CommandTTraverseSCM = 'pwd'
+"" nnoremap <Leader>oo :CommandT<CR>
+"" nnoremap <Leader>rr :CommandTFlush<CR>
+"" " Set this to ignore target directory
+"" set wildignore+=*.o,*.obj,.git,target,build,*.class,*.cache,*.pyc,_build
+
 "*****************************************************************************
-" Settings for Command-t
+" Settings for CtrlP
 "*****************************************************************************
-" nnoremap <silent> <C-o> :CommandT<CR>
-let g:CommandTTraverseSCM = 'pwd'
-nnoremap <Leader>oo :CommandT<CR>
-nnoremap <Leader>rr :CommandTFlush<CR>
+nnoremap <Leader>oo :CtrlP<CR>
+nnoremap <Leader>ob :CtrlPBuffer<CR>
 " Set this to ignore target directory
 set wildignore+=*.o,*.obj,.git,target,build,*.class,*.cache,*.pyc,_build
+
 
 "*****************************************************************************
 " Settings for grep
