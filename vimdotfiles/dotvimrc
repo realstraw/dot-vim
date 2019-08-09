@@ -35,11 +35,12 @@ set tags=.tags
 "*****************************************************************************
 " Settings for CtrlP
 "*****************************************************************************
+" Disable the default <c-p> mapping, we already using the leader based mapping
+let g:ctrlp_map = ''
 nnoremap <Leader>oo :CtrlP<CR>
 nnoremap <Leader>ob :CtrlPBuffer<CR>
 " Set this to ignore target directory
 set wildignore+=*.o,*.obj,.git,target,build,*.class,*.cache,*.pyc,_build
-
 
 "*****************************************************************************
 " Settings for grep
