@@ -40,7 +40,7 @@ let g:ctrlp_map = ''
 nnoremap <Leader>oo :CtrlP<CR>
 nnoremap <Leader>ob :CtrlPBuffer<CR>
 " Set this to ignore target directory
-set wildignore+=*.o,*.obj,.git,target,build,*.class,*.cache,*.pyc,_build
+set wildignore+=*.o,*.obj,.git,target,build,*.class,*.cache,*.pyc,_build,node_modules
 
 "*****************************************************************************
 " Settings for grep
